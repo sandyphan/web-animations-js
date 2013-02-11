@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<solution>
+  <exercise1>
+
+  </exercise1>
+
+  <exercise2>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>2</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>2</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>7</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '400px'}</property>
+    <time>7</time>
+  </exercise2>
+
+  <exercise3>
+    
+  </exercise3>
+
+  <exercise4>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>4.99</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '400px'}</property>
+    <time>4.99</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>5</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>5</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>9.99</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '400px'}</property>
+    <time>9.99</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>10</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>10</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>15</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '400px'}</property>
+    <time>15</time>
+  </exercise4>
+
+  <exercise5>
+
+  </exercise5>
+
+  <exercise6>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '300px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>5</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>5</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>10</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '300px'}</property>
+    <time>10</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>15</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>15</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>20</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '300px'}</property>
+    <time>20</time>
+  </exercise6>
+</solution>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<solution>
+  <exercise1>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '300px'}</property>
+    <time>3</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '300px'}</property>
+    <time>3</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>6</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '600px'}</property>
+    <time>6</time>
+    <object>document.getElementById('a')</object>
+    <property>{'top': '0px'}</property>
+    <time>9</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>9</time>
+  </exercise1>
+
+  <exercise2>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('b')</object>
+    <property>{'left': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('c')</object>
+    <property>{'left': '0px'}</property>
+    <time>0</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '400px'}</property>
+    <time>5</time>
+    <object>document.getElementById('b')</object>
+    <property>{'left': '200px'}</property>
+    <time>3</time>
+    <object>document.getElementById('b')</object>
+    <property>{'left': '500px'}</property>
+    <time>8</time>
+    <object>document.getElementById('c')</object>
+    <property>{'left': '0px'}</property>
+    <time>10</time>
+    <object>document.getElementById('c')</object>
+    <property>{'left': '300px'}</property>
+    <time>14.99</time>
+    <object>document.getElementById('a')</object>
+    <property>{'left': '400px'}</property>
+    <time>20</time>
+    <object>document.getElementById('b')</object>
+    <property>{'left': '200px'}</property>
+    <time>18</time>
+    <object>document.getElementById('b')</object>
+    <property>{'left': '500px'}</property>
+    <time>23</time>
+    <object>document.getElementById('c')</object>
+    <property>{'left': '0px'}</property>
+    <time>25</time>
+    <object>document.getElementById('c')</object>
+    <property>{'left': '300px'}</property>
+    <time>30</time>
+  </exercise2>
+
+  <exercise3>
+    
+  </exercise3>
+</solution>

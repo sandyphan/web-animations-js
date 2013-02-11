@@ -342,3 +342,6 @@ a:visited {
 .fail {
   visibility: hidden;
 }
+.reference-items {
+  cursor: pointer;
+}

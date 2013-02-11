@@ -345,3 +345,6 @@ a:visited {
 .reference-items {
   cursor: pointer;
 }
+#animNum {
+  display: none;
+}

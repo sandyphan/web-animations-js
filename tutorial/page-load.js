@@ -48,7 +48,6 @@ $(document.body).ready(function() {
           $(this).children().unwrap();
         });
       } else {
-        console.log("im here");
         var url = currentSection + '-exercise-' + exerciseNum + '.html';
         // checks if a file/link exist before adding contents
         // into page
@@ -133,15 +132,11 @@ var isNumber = function(str) {
 // animation divs
 // by default returns 1
 var findDivNum = function() {
-  var content = $('p').text();
-  var match = content.match(/\b(\d+) different animations\b | \b(\d+) children\b | \b(\d+) different items\b/);
-
-  if (match) {
-    if (isNumber(match[0])) {
-      return parseInt(match[0]);
-    }
-  }
-  return 1;
+  console.log('im looking number of divs');
+  var value = document.getElementById('animNum').innerHTML;
+  value = parseInt(value);
+  console.log(value);
+  return value;
 }
 
 // generate a, b, c, d... as to put in as id
@@ -156,7 +151,6 @@ var loadTest = function(exerciseNum, editor) {
   console.log('loading tests');
   $.getJSON("../tests-to-exercises.json")
     .success(function(data) {
-      console.log(data[currentSection]);
       tests = data[currentSection][0][exercise];
       for (var i = 0; i < tests.length; i++) {
         editor.addCheck(tests[i].element, tests[i].property, tests[i].timeProp);

@@ -48,27 +48,15 @@
   	"timeProp": 2
   }, {
   	"element": "document.getElementById('a')",
-  	"property": "{'top': '200px'}",
+  	"property": "{'top': '200px', 'left': '400px'}",
   	"timeProp": 4
   }, {
   	"element": "document.getElementById('a')",
-  	"property": "{'left': '400px'}",
-  	"timeProp": 4
-  }, {
-  	"element": "document.getElementById('a')",
-  	"property": "{'top': '200px'}",
+  	"property": "{'top': '200px', 'left': '0px'}",
   	"timeProp": 6
   }, {
   	"element": "document.getElementById('a')",
-  	"property": "{'left': '0px'}",
-  	"timeProp": 6
-  }, {
-  	"element": "document.getElementById('a')",
-  	"property": "{'top': '0px'}",
-  	"timeProp": 8
-  }, {
-  	"element": "document.getElementById('a')",
-  	"property": "{'left': '0px'}",
+  	"property": "{'top': '0px', 'left': '0px'}",
   	"timeProp": 8
   }],
   "exercise5": [{

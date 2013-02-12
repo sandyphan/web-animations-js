@@ -44,11 +44,7 @@
 	  "timeProp": 0
   }, {
 	"element": "document.getElementById('a')",
-  	"property": "{'top': '0px'}",
-  	"timeProp": 2
-  }, {
-  	"element": "document.getElementById('a')",
-  	"property": "{'left': '400px'}",
+  	"property": "{'top': '0px', 'left': '400px'}",
   	"timeProp": 2
   }, {
   	"element": "document.getElementById('a')",

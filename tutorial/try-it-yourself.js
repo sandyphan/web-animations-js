@@ -201,7 +201,7 @@ Iframe.prototype.getDom = function() {
 
 // Make the solution box toggleable.
 var toggleSolution = function() {
-  var element = document.querySelector('.toggleText');
+  var element = document.getElementById('toggleText');
   var elementStyle = getComputedStyle(element, null);
   var label = document.getElementById('hideLabel');
 

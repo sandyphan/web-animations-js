@@ -38,7 +38,7 @@ $(document.body).ready(function() {
     loadReferences();
   else {
 
-/*    // if one of the side menu is clicked
+    // if one of the side menu is clicked
     // update page content without refreshing the whole page.
     $('.sideMenu li').click(function(e) {
       // get the exercise number from the <li> being clicked.
@@ -69,15 +69,15 @@ $(document.body).ready(function() {
         });
       }
     });
-*/
-    $('.sideMenu li').click(function(e) {
+
+/*    $('.sideMenu li').click(function(e) {
       exerciseNum = $(this).html().split(' ')[1];
       if (parseInt(exerciseNum) !== exerciseNum && isNaN(exerciseNum)) {
        load_json_content(currentSection);
       } else {
         load_json_content(currentSection + '-exercise-' + exerciseNum);
       }
-    });
+    });*/
   }
 });
 
@@ -147,7 +147,7 @@ var isNumber = function(str) {
 // animation divs
 // by default returns 1
 var findDivNum = function() {
-  var value = document.querySelector('.animNum').innerHTML;
+  var value = document.querySelector('#animNum').innerHTML;
   value = parseInt(value);
   return value;
 }
@@ -172,84 +172,4 @@ var loadTest = function(exerciseNum, editor) {
       console.log('Error: ' + status );
       console.log('xhr: ' + xhr);
     });
-}
-
-
-var load_json_content = function(content) {
-  $.getJSON(currentSection + ".json")
-    .success(function(data) {
-      document.querySelector('.content').innerHTML = '';
-      console.log(data);
-      console.log(content);
-      var obj = data[content];
-      for (var i = 0; i < obj.length; i++) {
-        traverse_json_object(obj[i], '');
-      }
-      loadEditor();
-    })
-    .error(function(data, status, xhr) {
-      console.log('Error: ' + status );
-      console.log('xhr: ' + xhr);
-    });
-}
-
-var traverse_json_object = function(obj, className) {
-  var name = className, ele;
-  for (var prop in obj) {
-    var flag = false;
-    if (obj.hasOwnProperty(prop)) {
-      name += prop;
-      if (isObject(obj[prop])) {
-        name += ' ';
-        if (prop == 'ul') {
-          ele = loadList(obj[prop]);
-          flag = true;
-        } else if (prop == 'iframe') {
-          ele = loadIframe(obj[prop]);
-          flag = true;
-        } else {
-          traverse_json_object(obj[prop], name);
-          flag = true;
-        }
-        document.querySelector('.content').appendChild(ele);  
-        name = '';   
-      }
-    }
-    if (flag == false) {
-      if (prop == 'hideLabel' || prop == 'tryIt') {
-        ele = createObject('div', name, obj[prop], 'id');
-        if (prop == 'hideLabel')
-          ele.setAttribute('onclick', 'toggleSolution()');
-      } else {
-        if (prop.indexOf('code') !== -1)
-          ele = createObject('code', name, obj[prop], 'class');
-        else
-          ele = createObject('div', name, obj[prop], 'class');
-      }
-      document.querySelector('.content').appendChild(ele);
-    }
-
-    name = name.replace(prop, '');
-  }
-}
-
-var loadList = function(obj) {
-  var ul = createObject('ul', 'description', '', 'class');
-  for (var prop in obj) {
-    if (obj.hasOwnProperty(prop)) {
-      var li = createObject('li', '', obj[prop], '');
-      ul.appendChild(li);
-    }
-  }
-  return ul;
-}
-
-var loadIframe = function(obj) {
-  var iframe = createObject('iframe', obj.name, 'Your browser does not support iframes', 'class');
-  iframe.src = obj.src;
-  return iframe;
-}
-
-var isObject = function(data) {
-  return (typeof data === 'object');
 }

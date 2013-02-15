@@ -112,6 +112,10 @@
   background-color: #ABCDEF;
   padding: 10px; 
 }
+code {
+  color: #94704D;
+  font-size: 1.1em;
+}
 .exercises {
   font: bold 1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   background: #FFFF00;
@@ -133,7 +137,8 @@ a:visited {
 .sideMenu {
   list-style-type: none;
   position: absolute;
-  top: 15%;
+  top: 18%;
+  z-index: 0;
 }
 .sideMenu li:hover {
   background-color: #E6E6E6;
@@ -147,9 +152,11 @@ a:visited {
   padding: 20px;
   color: #CCC;
   border: 1px solid black;
+  z-index: 0;
 }
 .sideMenu li, #alphabet-menu li {
   font: 1em "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  z-index: 0;
 }
 #menuLabel {
   background-color: #222;
@@ -157,7 +164,7 @@ a:visited {
   padding: 20px;
   color: #DDD;
 }
-.toggleText {
+#toggleText {
   width: 60%;
   display: none;
   position: relative;
@@ -166,7 +173,7 @@ a:visited {
   font-size: 0.9em;
   margin-bottom: 10px;
 }
-.toggleText:after {
+#toggleText:after {
   content: '.';
   clear: both;
   display: block;
@@ -181,8 +188,6 @@ a:visited {
   clear: both;
   margin-left: 10%;
   display: block;
-  color: #94704D;
-  font-size: 1.1em;
 }
 #hideLabel {
   width: 10%;
@@ -337,6 +342,6 @@ a:visited {
 .reference-items {
   cursor: pointer;
 }
-.animNum {
+#animNum {
   display: none;
 }
